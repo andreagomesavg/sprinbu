@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado Productos</title>
+</head>
+<body>
+    <h1>listado de Productos</h1>
+<br/>
+ 
+<ul th:each="producto: ${productos}">
+    <li>
+        <span th:text="${producto.id}">id</span>
+        <em th:text="${producto.nombre}">elnombre</em>
+        <span th:text="${producto.cantidad}">lacantidad</span>
+    </li>
+
+</ul>
+</body>
+</html>

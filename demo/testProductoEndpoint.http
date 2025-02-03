@@ -1,0 +1,23 @@
+### GET request to example server
+GET http://localhost:8080/producto
+
+###
+
+GET http://localhost:8080/producto/27
+
+###
+
+POST http://localhost:8080/producto
+Content-Type: application/json
+
+{
+  "id": 57,
+  "nombre": "producto imposibol",
+  "cantidad": 0
+}
+
+###
+PUT  localhost:8080/producto/17
+Content-Type: application/x-www-form-urlencoded
+
+nuevoNombre = "nombre cambiao"

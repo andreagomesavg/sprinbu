@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario para guardar el producto</title>
+</head>
+<body>
+<h1>Formulario</h1>
+<br>
+<form action="#" th:action="@{save}" th:object="${productoform}" method="post">
+  <input type="number" th:field="*{id}"/>
+  <input type="text" th:field="*{nombre}"/>
+  <input type="number" th:field="*{cantidad}"/>
+  <input type="submit" value="Guardar"/>
+
+</form>
+</body>
+</html>
